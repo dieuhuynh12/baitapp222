@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tạo form và các điều khiển</title>
+    </head>
+    <style>
+        fieldset {
+          margin: 0 auto;
+          width: 70%;
+        }  
+        table{
+        width:100%
+        }
+        textarea{
+            margin: 0 auto;
+            width: 50%
+        }
+        .frame {
+padding: 5px;
+border: 3px solid black;
+}
+
+      </style>
+    <body style="color:rgb(14, 120, 234) ;">
+        
+        <form action="huynhxuandieu111@gmail.com">
+            <table border="2"; align="center" style="background-color: rgb(206, 248, 17);width:100%; text-align:left">
+                <tr  style="color:rgb(25, 124, 211);background-color:aliceblue;font-size: xx-large;text-align: center;">
+                    <th colspan="2">Đăng Kí du lịch</th>
+                </tr>
+                <tr>
+                    <td style="width:30%; ">Họ và tên</td>
+                    <td><input type="text" id="name" name="name"></td>
+
+                </tr>
+                <tr>
+                    <td>Địa chỉ:</td>
+                    <td><input type="text" id="diachi" diachi="diachi"></td>
+                </tr>
+                <tr>
+                    <td>Điện thoại</td>
+                    <td><input type="text" id="dienthoai" dienthoai="dienthoai"></td>
+                </tr>
+                <tr>
+                    <td>Khách Việt Nam  </td>
+                    <td> <input type="radio" name=""> </td>
+                </tr>
+                <tr>
+                    <td>Chọn Tour</td>
+                    <td><select>
+                        <optgroup label="Miền Bắc">
+                          <option value="apple">Hà Nội - Hạ Long -Sa Pa</option>
+                          <option value="banana">Hà Nội- Chùa Hương -Ninh Bình</option>
+                          <option value="cherry">Hà Nội-Cát Bà -Tuấn Châu</option>
+                        </optgroup>
+                        <optgroup label="Miền Trung">
+                          <option value="carrot">Huế-Đà Nẵng-Bạch Mã</option>
+                          <option value="pepper">Nha Trang- Đà Lạc</option>
+                          <option value="broccoli">Buôn Mê Thuộc- Gia Lai-Kontum</option>
+                        </optgroup>
+                        <optgroup label="Miền Nam">
+                            <option value="carrot">Tp.hcm- Cần Thơ- Cà Mau</option>
+                            <option value="pepper">TP.HCM-Mỹ Tho</option>
+                          </optgroup>
+                      </select>
+                      </td>
+                </tr>
+                <tr>
+                    <td>Phương Tiện</td>
+                    <td> <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Máy Bay</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Xe ô tô</label><br></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <fieldset style="text-align: center;border: 100% solid rgb(200, 3, 3); padding: 10px;width:550px;height:55px;">
+                          <legend style="text-align: left;color:brown"><i>Số lượng đoàn khách</i> </legend>
+                          <table>
+                              <td>Người lớn:</td>
+                              <td><input type="text" name="fullname"></td>
+                             <td>Trẻ em:</td>
+                              <td><input type="text" name="age"></td>
+                        
+                          </table>
+                        </fieldset>
+                       </td>
+                </tr>
+                <tr>
+                    <td> Ghi chú thêm</td>
+                    <td>
+                        <label for="messag"></label>
+      <textarea align="left" id="messag" name="messag" rows="5" cols="70">
+      </textarea>
+    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                    <input type="button" value="Đồng ý" onclick="displayUsername()">
+                </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div id="message" style="text-align: center;"></div>
+        <script>
+            function displayUsername() {
+              var username = document.getElementById("name").value;
+              document.getElementById("message").innerHTML = "Bạn đã đăng kí thành công " + username;
+            }
+        </script></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html> 

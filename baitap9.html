@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tạo bảng , trộn dòng và cột</title>
+    </head>
+    <body >
+        <p style="text-align: center;color:#b72b2b;font-weight: bold;font-size: xx-large;">
+        Chương trình học - Ngành lập trình</p>
+        <style>
+            table {
+              font-family: Tahoma;
+              font-size: 12px;
+              width: 100%;
+              border-collapse: collapse;
+            }
+            
+            th {
+              background-color: darkred;
+              color: white;
+            }
+            
+            td, th {
+              border: 1px solid rgb(228, 22, 118);
+              padding: 10px;
+            }
+          </style>
+          
+          <table >
+            <tr>
+              <th rowspan="2">Nhóm học phần </th>
+              <th rowspan="2">Môn học</th>
+              <th colspan="2">Số tiết</th>
+            </tr>
+            <tr>
+              <th>Lý thuyết </th>
+              <th>Thực hành  </th>
+            </tr>
+                <tr>
+                  <td rowspan="6" style="color:#b72b2b;text-align: center;">1<br>Tin học văn phòng</td>
+                  <td>Hệ điều hành windows</td><td style="text-align: center;">3</td><td style="text-align: center;">5</td>
+                </tr>
+                <tr>
+                  <td>Sử dụng Internet</td style="text-align: center;"><td style="text-align: center;">3</td><td style="text-align: center;">5</td>
+                </tr>
+                <tr>
+                  <td>Soạn thảo văn bản với MS Word</td><td style="text-align: center;">24</td><td style="text-align: center;">40</td>
+                </tr>
+                <tr>
+                  <td>Tạo bài trình diễn với MS PowerPoint</td><td style="text-align: center;">9</td><td style="text-align: center;">15</td>
+                </tr>
+                <tr>
+                  <td>Sử lí số liệu với MS Excel</td><td style="text-align: center;">24</td><td style="text-align: center;">40</td>
+                </tr>
+                <tr>
+                  <td>Tạo trang web với MS FrontPage</td><td style="text-align: center;">9</td><td style="text-align: center;">15</td>
+                </tr>
+                <tr>
+                  <td rowspan="2" style="color:#b72b2b;text-align: center">II.<BR>Kỹ thuật lập trình (VB.NET)</td> <td>Nhập môn Lập trình</td><td style="text-align: center;">36</td><td style="text-align: center;">60</td>
+                </tr>
+                <tr>
+                  <td>Kỹ thuật lập trình</td><td style="text-align: center;">36</td><td style="text-align: center;">60</td>
+                </tr>
+                <tr  >
+                  <td colspan="4">.....</td>
+                  
+                </tr>
+          </table>  
+    </body>
+</html>

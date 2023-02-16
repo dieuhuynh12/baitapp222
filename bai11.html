@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tạo form và các điều khiển trên
+            form
+            </title>
+    </head>
+    <body>
+        <form id="form1">
+            <table border="1" style="margin: auto; width: 1000px;background-color:aquamarine ">
+              <tr>
+                <th colspan="2" style="text-align: center;color:brown;font-size: xx-large;"><b>Đăng nhập</b></th>
+           </tr>
+              <tr>
+                <td><label for="username">Tên đăng nhập:</label></td>
+                <td><input type="text" id="username" style="border: 1px solid #000; padding: 5px;"></td>
+              </tr>
+              <tr>
+                <td><label for="password">Mật khẩu:</label></td>
+                <td><input type="password" id="password" style="border: 1px solid #000; padding: 5px;"></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><input type="button" id="submitBtn" value="Gửi" onclick="displayUsername()"></td>
+              </tr>
+              <tr>
+                <td colspan="2">     
+                  <div id="message" style="text-align: center;"></div><script>
+                  function displayUsername() {
+                    var username = document.getElementById("username").value;
+                    document.getElementById("message").innerHTML = "Mã người dùng: " + username  + " đã đăng nhập thành công";
+                  }
+                  </script>   </td>
+              </tr>
+            </table>
+          </form>
+          <div id="message" style="text-align: center;"></div>
+          
+    </body>
+</html>
